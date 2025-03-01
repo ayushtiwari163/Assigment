@@ -18,7 +18,8 @@ module.exports = {
         port: 6379,
         redisExpTime: 86400 * 60 * 24,
         redisExpTimeForSession: 3600 *1000,
-        prefix: "assignment" // 5184000 //1hrs
+        prefix: "assignment", // 5184000 //1hrs,
+        auth_pass: "",
     },
     apiKey: "Dev_API_KEY",
     fileSizeLimit: 2 * 1024 * 1024,

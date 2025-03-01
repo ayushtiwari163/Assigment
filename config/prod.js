@@ -17,6 +17,7 @@ module.exports = {
         port: parseInt(process.env.REDIS_PORT, 10),
         redisExpTime: parseInt(process.env.REDIS_EXP_TIME, 10),
         redisExpTimeForSession: parseInt(process.env.REDIS_EXP_TIME_FOR_SESSION, 10),
+        auth_pass: process.env.REDIS_AUTH_PASSWORD,
         prefix: "assignment" 
 
     },
