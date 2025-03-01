@@ -25,7 +25,7 @@ module.exports = {
        client_id: process.env.GOOGLE_CLIENT_ID,
        project_id: process.env.GOOGLE_PROJECT_ID,
        client_secret: process.env.GOOGLE_CLIENT_SECRET,
-       redirect_uris: process.env.GOOGLE_CLIENT_SECRET,
+       redirect_uris: process.env.GOOGLE_REDIRECT_URL,
        refresh_token: process.env.GOOGLE_REFRESH_TOKEN,
        folder_id:  process.env.GOOGLE_FOLDER_ID,
        image_folder_id: process.env.IMAGE_FOLDER_ID
