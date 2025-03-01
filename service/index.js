@@ -17,7 +17,7 @@ const uploadCSVService = async(file, clientDetails, webhookUrl) => {
     const driveLink = driveResponse;
     await model.pgInsert(queries.csvRequestQueries.INSERT_CSV_REQUEST, [requestId, fileName, driveLink, "PENDING", clientDetails.client_id]);
 
-    await csvProcessingQueue.add("processCSV", { requestId, driveLink, webhookUrl });
+    csvProcessingQueue.add("processCSV", { requestId, driveLink, webhookUrl });
     fs.unlinkSync(filePath);
     return {is_error: false, request_id: requestId };
 

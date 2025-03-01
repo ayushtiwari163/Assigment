@@ -12,7 +12,6 @@ const uploadCSV = async (req, res) => {
     try {
       const clientDetails = req.client;
       const webhool_url = req.body.webhook_url;
-      console.log(webhool_url);
       const result = await service.uploadCSVService(req.file, clientDetails, webhool_url);
       if (result.is_error) {
         return res.status(result.statusCode).send({
