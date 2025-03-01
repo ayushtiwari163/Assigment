@@ -10,7 +10,6 @@ const uploadCSV = async (req, res) => {
       });
     }
     try {
-      console.log(req.body);
       const clientDetails = req.client;
       const webhool_url = req.body.webhook_url;
       console.log(webhool_url);
