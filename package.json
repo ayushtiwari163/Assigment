@@ -1,0 +1,40 @@
+{
+  "name": "assigment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon index.js\" \"nodemon service/consumer.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ayush tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.1",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "bull": "^4.16.5",
+    "bullmq": "^5.41.7",
+    "compression": "^1.8.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.3.0",
+    "googleapis": "^146.0.0",
+    "http-status": "^2.1.0",
+    "joi": "^17.13.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "pg": "^8.13.3",
+    "redis": "^3.0.2",
+    "set-tz": "^0.2.0",
+    "sharp": "^0.33.5",
+    "util": "^0.12.5",
+    "uuid": "^11.1.0"
+  }
+}
