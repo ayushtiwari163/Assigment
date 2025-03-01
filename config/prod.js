@@ -19,5 +19,15 @@ module.exports = {
         redisExpTimeForSession: parseInt(process.env.REDIS_EXP_TIME_FOR_SESSION, 10),
         prefix: "assignment" 
 
+    },
+    fileSizeLimit: parseInt(process.env.FILE_SIZE_LIMIT, 10),
+    googleDriveConfig: {
+       client_id: process.env.GOOGLE_CLIENT_ID,
+       project_id: process.env.GOOGLE_PROJECT_ID,
+       client_secret: process.env.GOOGLE_CLIENT_SECRET,
+       redirect_uris: process.env.GOOGLE_CLIENT_SECRET,
+       refresh_token: process.env.GOOGLE_REFRESH_TOKEN,
+       folder_id:  process.env.GOOGLE_FOLDER_ID,
+       image_folder_id: process.env.IMAGE_FOLDER_ID
     }
 }
