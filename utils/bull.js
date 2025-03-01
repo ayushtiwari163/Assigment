@@ -1,8 +1,12 @@
 const Queue = require("bull");
 const {redisConfig} = require('../config')
 const redisOptions = {
-  connection: { host: redisConfig.host, port: redisConfig.port, auth_pass: redisConfig.auth_pass },
-};
+    redis: {
+      host: redisConfig.host,
+      port: redisConfig.port,
+      password: redisConfig.auth_pass || undefined, 
+    },
+  };
 
 const csvProcessingQueue = new Queue("csvProcessingQueue", redisOptions);
 
